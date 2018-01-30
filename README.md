@@ -1,5 +1,3 @@
-### Wintersemester 2017/18 | Studiengang Digitale Methodik
+### my impress.js (https://github.com/impress/impress.js/) Presentations
 
-# Präsentation OpenSearch und BEACON
-
-Dieses Repository enthält die Präsentation zu meinem Vortrag in Modul 7b zum Thema OpenSearch und BEACON.
+This repository contains all the impress.js presentations I have done.
