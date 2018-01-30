@@ -1,7 +1,5 @@
-### Sommersemester 2017 | Studiengang Digitale Methodik
+### Wintersemester 2017/18 | Studiengang Digitale Methodik
 
-# Seminar "Erarbeitung von Schulungsmaterialien"
+# Präsentation OpenSearch und BEACON
 
-## Materialien
-
-Dieses Repository enthält die Präsentation zu meinem Vortrag in Modul 7b zum Thema BEACON und OpenSearch.
+Dieses Repository enthält die Präsentation zu meinem Vortrag in Modul 7b zum Thema OpenSearch und BEACON.
