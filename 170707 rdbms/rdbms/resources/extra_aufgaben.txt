@@ -1,0 +1,66 @@
+To-Dos
+- Video (-> wiederholt sich nicht) :/
+- weitere Übungsaufgaben
+- create table/insert into
+- Quellen noch einmal anschauen
+- Kommentare im Code! —> habe ein paar hinzugefügt, passt das so? -> nochmal mehr kommentiert, Kommentare standen teilweise an den falschen Stellen, sollte so 		passen
+
+
+Unsere zusätzlichen Übungsaufgaben für die Nachbereitung
+
+1.
+
+Wann und wo wurde Matthias Flacius geboren?
+
+SELECT description
+FROM persons
+WHERE name='Flacius, Matthias'
+
+2.
+
+Welche Namensvarianten gibt es von Matthias Flacius?
+
+
+SELECT name_variants
+FROM `persons`
+WHERE name='Flacius, Matthias'
+
+3.
+
+Wie viele Werke wurden vor 1200 veröffentlicht?
+
+Antwort: 106
+
+SELECT title, volume
+FROM `sources`
+WHERE date_start < '1200' AND date_start !=''
+
+4.
+5.
+6.
+7.
+
+
+8.
+
+Welche unterschiedlichen Rollen hat Matthias Flacius in seinen Schriften eingenommen?
+
+Mit LEFT JOIN: (geht auch mit INNER JOIN)
+
+SELECT DISTINCT roles.name
+FROM `persons`
+LEFT JOIN relations ON relations.person=persons.uid
+LEFT JOIN roles ON roles.uid=relations.role
+WHERE persons.name='Flacius, Matthias'
+
+9.
+
+Welche Titel hat Matthias Flacius verfasst?
+
+SELECT DISTINCT persons.name, sources.title, roles.name
+FROM `persons`
+INNER JOIN relations ON relations.person=persons.uid
+INNER JOIN roles ON roles.uid=relations.role
+INNER JOIN sources ON sources.uid=relations.source
+WHERE persons.name='Flacius, Matthias' AND roles.name='Autor'
+
