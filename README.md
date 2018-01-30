@@ -4,5 +4,4 @@
 
 ## Materialien
 
-Dieses Repository enthält die kollaborativ erarbeiteten Schulungsmaterialien
-zu den einzelnen Themengebieten (Impress.js Präsentationen).
+Dieses Repository enthält die Präsentation zu meinem Vortrag in Modul 7b zum Thema BEACON und OpenSearch.
