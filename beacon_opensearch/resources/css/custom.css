@@ -1,0 +1,68 @@
+a:link,
+a:hover,
+a:focus,
+a:visited {
+    color: #00224D;
+}
+
+li:before {
+    color: #00224D;
+}
+
+body {
+  background-image: url("../img/bg_body.png");
+  font-family: "Book Antiqua","Hoefler Text","Century Schoolbook","Century Schoolbook L",Times,serif;
+}
+.red {
+    color: #00224D;
+}
+
+h3,li {
+    color: #00224D;
+    padding-top: 10px;
+}
+
+li::first {
+  padding-left: 30px;
+}
+
+.difference {
+  color: #002754;
+}
+
+.differenceInText {
+  display: inline;
+}
+
+.crop {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0px,950px, 245px, 0px);
+}
+
+.crop2 {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0px,950px, 400px, 0px);
+}
+
+.crop3 {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(20px,950px, 200px, 0px);
+}
+
+td {
+  font-size: 2rem;
+}
+
+
+
+/*.slide-div-4 {
+  font-family: "Arial ";
+  font-size: 8rem;
+}
+
+Class für die Foliennummer rechts unten
+
+*/
