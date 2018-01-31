@@ -396,7 +396,7 @@
 
     <div class="step ">
       <h2>Was ist BEACON?</h2>
-      <quote>BEACON ist ein sehr einfaches Dateiformat, mit dem Links auf Webseiten angegeben werden können, die Inhalte zu bestimmten Normdaten bieten.</quote>
+      <quote>"BEACON ist ein sehr einfaches Dateiformat, mit dem Links auf Webseiten angegeben werden können, die Inhalte zu bestimmten Normdaten bieten."</quote>
       <h5>Quelle: <a href="https://de.wikipedia.org/wiki/Wikipedia:BEACON">Wikipedia:BEACON</a></h5>
       <br />
       <ul>
@@ -412,50 +412,37 @@
     </div>
 
     <div class="step ">
-      <h2>Was ist BEACON?</h2> Dokumentation, Beispiele und gleichzeitig Aggregator: <a href="http://beacon.findbuch.de/">beacon.findbuch.de</a>
+      <h2>Was ist BEACON?</h2> Link zu Dokumentationen, Beispiele und gleichzeitig Aggregator: <a href="http://beacon.findbuch.de/">beacon.findbuch.de</a>
       <br />
       <br />
       <div class="substep">
 
 
-        <h4>Dort verlinkt: BEACON Datei des Projekt Gutenberg</h3>
-        <img src="resources/img/beacon_gutenberg.png" />
+        <h4>Dort verlinkt: BEACON Datei zum Projekt Gutenberg, erstellt von Andreas Praefcke</h3>
+
+        <iframe width="950" height="400" src="http://www.andreas-praefcke.de/temp/BEACON-PND-ProjektGutenbergDE.txt"></iframe>
+        <h4>Quelle: <a href="http://www.andreas-praefcke.de/temp/BEACON-PND-ProjektGutenbergDE.txt">www.andreas-praefcke.de</a></h4>
       </div>
     </div>
 
     <div class="step ">
       <h2>BEACON Metazeilen</h2>
-      <img src="resources/img/beacon_gutenberg.png" />
+      <iframe width="950" height="400" src="http://www.andreas-praefcke.de/temp/BEACON-PND-ProjektGutenbergDE.txt"></iframe>
       <div class="substep">
-      <form>
-        <code>
+        <form>
+          <code>
 #EXAMPLES: ID1|ID2|...
         </code>
-      </form>
-      <ul>
-        <li>
-          Beispiel IDs, unter denen Einträge zu finden sind
-        </li>
-      </ul>
+        </form>
+        <ul>
+          <li>
+            Beispiel IDs, unter denen Einträge zu finden sind
+          </li>
+        </ul>
 
+
+      </div>
       <div class="substep">
-      <form>
-        <code  style="display:block;white-space: pre-wrap;">#FEED:[URL]
-#UPDATE: YYYY-MM-DDTHH:MM:SSZ</code>
-      </form>
-      <ul>
-        <li>
-          #UPDATE: Freitextangabe, wie oft der #FEED aktualisiert wird
-        </li>
-      </ul>
-      </div>
-      </div>
-    </div>
-
-    <div class="step ">
-      <h2>BEACON Metazeilen</h2>
-        <img src="resources/img/beacon_gutenberg.png" />
-        <div class="">
         <form>
           <code>
   #PREFIX: URI-prefix
@@ -473,198 +460,213 @@
       </div>
     </div>
 
+    <div class="step ">
+      <h2>BEACON Metazeilen</h2>
+      <h4>(Aggreggierte BEACON Datei von beacon.findbuch.de)</h4>
+      <img src="resources/img/beacon_gutenberg.png" />
 
-      <div class="step ">
-        <h2>BEACON IDs</h2>
-        <h3>Verweisen auf einzigartige "Objekte", die Inhalte zu Normdaten bieten, meist Personen in der GND</h3>
-        <div class="substep">
+      <div class="substep">
+        <form>
+          <code style="display:block;white-space: pre-wrap;">#FEED:[URL]
+#UPDATE: YYYY-MM-DDTHH:MM:SSZ</code>
+        </form>
+        <ul>
+          <li>
+            #UPDATE: Freitextangabe, wie oft der #FEED aktualisiert wird
+          </li>
+        </ul>
+      </div>
+    </div>
 
 
-          <code>12345</code>
-          <br />
-          <ul>
-            <li>
-              Zur ID 12345 gibt es auf dieser Seite Eintragungen
-            </li>
-          </ul>
-        </div>
+    <div class="step ">
+      <h2>BEACON IDs</h2>
+      <h3>Verweisen auf einzigartige "Objekte", die Inhalte zu Normdaten bieten, meist Personen in der GND</h3>
+      <div class="substep">
 
-        <div class="substep">
-          <code  style="display:block;white-space: pre-wrap;"> 12345|blabla
+
+        <code>12345</code>
+        <br />
+        <ul>
+          <li>
+            Zur ID 12345 gibt es auf dieser Seite Eintragungen
+          </li>
+        </ul>
+      </div>
+
+      <div class="substep">
+        <code style="display:block;white-space: pre-wrap;"> 12345|blabla
  12345|0x
  12345|-</code>
-          <ul>
-            <li>
-              Zur ID 12345 gibt es auf dieser Seite Eintragungen - Rest wird ignoriert
-            </li>
-          </ul>
+        <ul>
+          <li>
+            Zur ID 12345 gibt es auf dieser Seite Eintragungen - Rest wird ignoriert
+          </li>
+        </ul>
 
-        </div>
-
-        <div class="substep">
-          <code>12345|23</code>
-          <br />
-          <ul>
-            <li>
-              Zur ID 12345 gibt es 23 Eintragungen
-            </li>
-          </ul>
-        </div>
-
-        <div class="substep">
-          <code  style="display:block;white-space: pre-wrap;"> 12345|23|http://example.com
- 12345|http://example.com</code>
-          <ul>
-            <li>
-              Angabe von Example- oder Direktlinks möglich
-            </li>
-          </ul>
-
-        </div>
       </div>
 
-      <div class="step">
-        <h2>BEACON Beispiel</h2>
-        Aufruf des Website Präfix
-        <code>http://d-nb.info/gnd/</code><br />
-        mit der ID
-        <code>100191290</code>
-        führt zu...
+      <div class="substep">
+        <code>12345|23</code>
         <br />
-        <img style="width: 70%; height: 70%" src="resources/img/100191290.png" />
-
+        <ul>
+          <li>
+            Zur ID 12345 gibt es 23 Eintragungen
+          </li>
+        </ul>
       </div>
 
-      <div class="step">
-        <h1 class="difference">03</h1>
-        <h2 class="line-height-one-five">
+      <div class="substep">
+        <code style="display:block;white-space: pre-wrap;"> 12345|23|http://example.com
+ 12345|http://example.com</code>
+        <ul>
+          <li>
+            Angabe von Example- oder Direktlinks möglich
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="step">
+      <h2>BEACON Beispiel</h2> Aufruf des Website Präfix
+      <code>http://d-nb.info/gnd/</code><br /> mit der ID
+      <code>100191290</code> führt zu...
+      <br />
+      <img style="width: 70%; height: 70%" src="resources/img/100191290.png" />
+
+    </div>
+
+    <div class="step">
+      <h1 class="difference">03</h1>
+      <h2 class="line-height-one-five">
                   Kombination von OpenSearch (mit seeAlso Format) und BEACON</h2>
-      </div>
+    </div>
 
-      <div class="step">
-        <h2>OpenSearch seeAlso Abfrage über Informationen aus BEACON Datei</h2>
-        <img style="widht:70%" src="https://digicademy.github.io/presentation-catalogus-professorum/resources/img/concept_beacon.png" />
-        <h4>Quelle: <a href="https://digicademy.github.io/presentation-catalogus-professorum/#/step-1">Digicademy, Torsten Schrade</a></h4>
-      </div>
-
-
-      <!-- ###########   FINISH   ########### -->
-      <div class="step ">
-
-        <h1>Danke für eure Aufmerksamkeit!</h1>
-
-      </div>
+    <div class="step">
+      <h2>OpenSearch seeAlso Abfrage über Informationen aus BEACON Datei</h2>
+      <img style="widht:70%" src="https://digicademy.github.io/presentation-catalogus-professorum/resources/img/concept_beacon.png" />
+      <h4>Quelle: <a href="https://digicademy.github.io/presentation-catalogus-professorum/#/step-1">Digicademy, Torsten Schrade</a></h4>
+    </div>
 
 
+    <!-- ###########   FINISH   ########### -->
+    <div class="step ">
 
-      <!--
+      <h1>Danke für eure Aufmerksamkeit!</h1>
+
+    </div>
+
+
+
+    <!--
 
         ###### End of our code #####
 
         -->
 
 
-    </div>
+  </div>
 
-    <!-- jquery -->
-    <script src="../common/vendor/jquery/jquery-1.11.0.min.js "></script>
+  <!-- jquery -->
+  <script src="../common/vendor/jquery/jquery-1.11.0.min.js "></script>
 
-    <!-- chartist -->
-    <script src="../common/vendor/chartist/chartist.min-0.9.7.js "></script>
-    <script src="../common/resources/js/chartist.charts.js "></script>
+  <!-- chartist -->
+  <script src="../common/vendor/chartist/chartist.min-0.9.7.js "></script>
+  <script src="../common/resources/js/chartist.charts.js "></script>
 
-    <!-- codemirror
+  <!-- codemirror
 
     Edit:
     As mentioned before, we implemented more than one editor to be able to use multiple fragments of code in one presentation
 
     -->
-    <script src="../common/vendor/codemirror/lib/codemirror.js "></script>
-    <script src="../common/vendor/codemirror/addon/edit/matchbrackets.js "></script>
-    <script src="../common/vendor/codemirror/mode/sparql/sparql.js "></script>
-    <script src="../common/vendor/codemirror/mode/xml/xml.js "></script>
-    <script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("sparql "), {
-        mode: "text/html ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-      var editor2 = CodeMirror.fromTextArea(document.getElementById("sparql2 "), {
-        mode: "application/sparql-query ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-      var editor3 = CodeMirror.fromTextArea(document.getElementById("sparql3 "), {
-        mode: "application/sparql-query ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-      var editor4 = CodeMirror.fromTextArea(document.getElementById("sparql4 "), {
-        mode: "application/sparql-query ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-      var editor5 = CodeMirror.fromTextArea(document.getElementById("sparql5 "), {
-        mode: "application/sparql-query ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-      var editor6 = CodeMirror.fromTextArea(document.getElementById("sparql6 "), {
-        mode: "application/sparql-query ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-      var editor7 = CodeMirror.fromTextArea(document.getElementById("sparql7 "), {
-        mode: "application/sparql-query ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
+  <script src="../common/vendor/codemirror/lib/codemirror.js "></script>
+  <script src="../common/vendor/codemirror/addon/edit/matchbrackets.js "></script>
+  <script src="../common/vendor/codemirror/mode/sparql/sparql.js "></script>
+  <script src="../common/vendor/codemirror/mode/xml/xml.js "></script>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("sparql "), {
+      mode: "text/html ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+    var editor2 = CodeMirror.fromTextArea(document.getElementById("sparql2 "), {
+      mode: "application/sparql-query ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+    var editor3 = CodeMirror.fromTextArea(document.getElementById("sparql3 "), {
+      mode: "application/sparql-query ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+    var editor4 = CodeMirror.fromTextArea(document.getElementById("sparql4 "), {
+      mode: "application/sparql-query ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+    var editor5 = CodeMirror.fromTextArea(document.getElementById("sparql5 "), {
+      mode: "application/sparql-query ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+    var editor6 = CodeMirror.fromTextArea(document.getElementById("sparql6 "), {
+      mode: "application/sparql-query ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+    var editor7 = CodeMirror.fromTextArea(document.getElementById("sparql7 "), {
+      mode: "application/sparql-query ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
 
 
 
-      // Additional Editors for possible code in the future
+    // Additional Editors for possible code in the future
 
 
-      var editor8 = CodeMirror.fromTextArea(document.getElementById("sparql8 "), {
-        mode: "application/sql ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-      var editor9 = CodeMirror.fromTextArea(document.getElementById("sparql9 "), {
-        mode: "application/sql ",
-        matchBrackets: true,
-        lineNumbers: true,
-        viewportMargin: Infinity
-      });
-    </script>
+    var editor8 = CodeMirror.fromTextArea(document.getElementById("sparql8 "), {
+      mode: "application/sql ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+    var editor9 = CodeMirror.fromTextArea(document.getElementById("sparql9 "), {
+      mode: "application/sql ",
+      matchBrackets: true,
+      lineNumbers: true,
+      viewportMargin: Infinity
+    });
+  </script>
 
-    <!-- highlight -->
-    <script src="../common/vendor/highlight/highlight.pack-9.3.0.js "></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-    <script src="../common/resources/js/hljs.linenumbering.js "></script>
+  <!-- highlight -->
+  <script src="../common/vendor/highlight/highlight.pack-9.3.0.js "></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <script src="../common/resources/js/hljs.linenumbering.js "></script>
 
-    <!-- magnific popup -->
-    <script src="../common/vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js "></script>
-    <script src="../common/resources/js/magnific-popup.lightbox.js "></script>
+  <!-- magnific popup -->
+  <script src="../common/vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js "></script>
+  <script src="../common/resources/js/magnific-popup.lightbox.js "></script>
 
-    <!-- impress.mod.js -->
-    <script src="../common/vendor/impress/impress.fork.js "></script>
-    <script src="../common/vendor/impress/impress-slidenum.js "></script>
-    <script>
-      var obj = impress();
-      obj.init();
-      initSlideNo(obj);
-    </script>
+  <!-- impress.mod.js -->
+  <script src="../common/vendor/impress/impress.fork.js "></script>
+  <script src="../common/vendor/impress/impress-slidenum.js "></script>
+  <script>
+    var obj = impress();
+    obj.init();
+    initSlideNo(obj);
+  </script>
 
 </body>
 
