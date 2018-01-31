@@ -1,12 +1,13 @@
 a:link,
 a:hover,
 a:focus,
-a:visited {
-    color: #00224D;
+a:visited,
+a {
+    color: red;
 }
 
 li:before {
-    color: #00224D;
+    color: red;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     color: #00224D;
 }
 
-h3,li {
+li {
     color: #00224D;
     padding-top: 10px;
 }
@@ -27,7 +28,7 @@ li::first {
 }
 
 .difference {
-  color: #002754;
+  color: red;/*#002754*/
 }
 
 .differenceInText {
@@ -36,8 +37,7 @@ li::first {
 
 .crop {
   overflow: hidden;
-  position: absolute;
-  clip: rect(0px,950px, 245px, 0px);
+  position: absolute  ;
 }
 
 .crop2 {
