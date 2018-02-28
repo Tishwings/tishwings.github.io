@@ -53,7 +53,7 @@
     <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
   </head>
 
-  <body>
+  <body onload="startTime()">
 
     <div class="fallback-message">
       <p>
@@ -79,9 +79,10 @@
 
         <h4>
           <strong>
-            <span id="datetime"></span></strong>
-          |
-          <a href="#">Dock 39 - Stadtwerke Mainz AG</a>
+            <span class="datetime red"></span>
+          </strong>
+          <a href="https://www.mainzer-stadtwerke.de/">
+            im Dock 39 - Stadtwerke Mainz AG</a>
         </h4>
         <h4>
           <strong>push & pull<br/>Digitale Geisteswissenschaften und ihr Mehrwert für uns alle</strong>
@@ -129,7 +130,7 @@
             Was ist Photogrammetrie?
           </li>
           <li>
-            Problem mit reflektierenden/durchsichtigen Objekten
+            Problem mit reflektierenden/transparenten Objekten
           </li>
           <li>
             Problemlösung aus 2 Perspektiven
@@ -141,6 +142,9 @@
                 Algorithmen bei der Erkennung
               </li>
             </ol>
+          </li>
+          <li>
+            Erkenntnisse
           </li>
           <li>
             Fragen / Diskussion
@@ -174,25 +178,35 @@
                 </ul>
               </li>
             </ul>
-            <h3>Interessen im Master</h3>
+
+          </div>
+          <div class="three columns">
+            <img src="resources/img/patrick_toschka.jpg"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="twelve columns">
+            <h3>Interessen im Master Digitale Methodik</h3>
             <ul>
               <li>
-                Schwerpunkt: Raumbezogene Daten
+                <div class="red" style="display: inline;">
+                  Schwerpunkt:
+                </div>
+                Raumbezogene Daten
               </li>
               <li>
-                Schwerpunkt: Natural Language Processing (OCR, SEO)
+                <div class="red" style="display: inline;">
+                  Schwerpunkt:
+                </div>
+                Natural Language Processing (OCR, SEO)
               </li>
               <li>
-                3D-Modelle als Forschungs- und Vermittlungsmethode (Fokus auf Architektur)
+                3D-Modelle als Forschungs- und Vermittlungsmethode (Architektur)
               </li>
-
               <li>
                 Semantic Web - Linked Open Data
               </li>
             </ul>
-          </div>
-          <div class="three columns">
-            <img src="resources/img/patrick_toschka.jpg"/>
           </div>
         </div>
       </div>
@@ -205,12 +219,12 @@
         <div class="row">
 
           <div class="one column">
-            <h4>Ziel</h4>
+            <h4 class="red">Ziel</h4>
           </div>
           <div class="ten columns">
             <ul>
               <li>
-                Eigenes Projekt mit 3D/Raumbezug
+                Eigenes Projekt mit 3D-/Raumbezug
               </li>
               <li>
                 Englischsprachiges Ausland
@@ -231,10 +245,10 @@
               allowfullscreen="allowfullscreen"></iframe>
           </div>
         </div>
-        <div class="five columns">
+        <div class="six columns">
           <div class="sketchfab-embed-wrapper">
             <img src="resources/img/reise.png"/>
-
+            <h4>Oktober - Dezember 2017</h4>
           </div>
         </div>
       </div>
@@ -243,22 +257,6 @@
           <a href="https://humanities.exeter.ac.uk/classics/staff/lisaksen/">
             Professor Leif Isaksen</a>
           am Digital Humanities Lab in Exeter</h3>
-      </div>
-    </div>
-
-    <div class="step">
-      <div class="row">
-        <h2>3. Was ist Photogrammetrie?</h2>
-        <div class="row">
-          <div class="nine columns">
-            <img src="https://photogrammetry.irc.umbc.edu/images/ChrisPeregoy.jpg"/>
-          </div>
-        </div>
-        <div class="row">
-          <h6>Quelle:
-            <a href="https://photogrammetry.irc.umbc.edu/">An Honor University in Maryland</a>
-          </h6>
-        </div>
       </div>
     </div>
 
@@ -316,37 +314,236 @@
     </div>
 
     <div class="step">
+      <div class="row">
+        <h2>3. Was ist Photogrammetrie?</h2>
+        <div class="row">
+          <div class="one columns"></div>
+          <div class="nine columns">
+            <img src="https://photogrammetry.irc.umbc.edu/images/ChrisPeregoy.jpg"/>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="one columns"></div>
+          <div class="nine columns">
+            <h6>Quelle:
+              <a href="https://photogrammetry.irc.umbc.edu/">An Honor University in Maryland</a>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
       <h2>3. Was ist Photogrammetrie?</h2>
+      <h3 class="red">Workflow</h3>
+      <ol>
+        <li>
+          Fotos vom Objekt aufnehmen
+        </li>
+        <li>
+          Bilder in Software (hier:
+          <a href="http://www.agisoft.com/">Agisoft Photoscan</a>) importieren
+        </li>
+        <li>
+          Bilder (automatisch) anordnen anhand von erkannten Tie Points
+        </li>
+        <li>
+          Punktwolke erstellen
+        </li>
+        <li>
+          Mesh erstellen
+        </li>
+        <li>
+          Struktur mit Farbe erstellen
+        </li>
+      </ol>
+      <h3>
+        <span class="red">
+          Dazwischen:</span>
+        viele Korrekturen, Nachbearbeitungen, Anpassungen</h3>
     </div>
 
     <div class="step">
-      <h2>4.Problem mit reflektierenden/durchsichtigen Objekten</h2>
+      <h2>4.Problem mit reflektierenden / transparenten Objekten</h2>
+      <h3 class="red" style="display: inline;">
+        Beispiel:
+      </h3>
+      So (oder ähnlich) soll es aussehen
+      <div class="row" style="margin-left: 50px;">
+        <div class="ten columns">
+          <img src="resources/img/beispiel_buch.png"/>
+        </div>
+      </div>
     </div>
 
     <div class="step">
-      <h2>5. Problemlösung aus 2 Perspektiven</h2>
-      <h3>5.1 Pre-Processing</h3>
+      <h2>4.Problem mit reflektierenden / transparenten Objekten</h2>
+      <ul>
+        <li>
+          Es werden keine Tie Points erkannt
+        </li>
+        <li>
+          Die Bilder können gar nicht erst angeordnet werden
+        </li>
+      </ul>
+      <h3 class="red" style="display: inline;">
+        Beispiel:
+      </h3>
+      So soll es
+      <h3 class="red" style="display: inline;">
+        nicht
+      </h3>
+      aussehen
+      <div class="row">
+
+        <div class="six columns">
+          <img src="resources/img/wasserflasche_foto.png"/>
+        </div>
+        <div class="six columns">
+          <img src="resources/img/beispiel_flasche.png"/>
+        </div>
+      </div>
     </div>
 
     <div class="step">
-      <h2>5. Problemlösung aus 2 Perspektiven</h2>
-      <h3>5.2 Algorithmen bei der Erkennung</h3>
+      <h2>4.Problem mit reflektierenden / transparenten Objekten</h2>
+      <div class="sketchfab-embed-wrapper" align="center">
+        <iframe
+          width="800"
+          height="500"
+          src="https://sketchfab.com/models/2a5474fdfd7f4eeaaf5f083638f71b1d/embed?autospin=0.2&amp;camera=0"
+          frameborder="0"
+          allowvr="allowvr"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          onmousewheel=""></iframe>
+
+        <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+          <a href="https://sketchfab.com/models/2a5474fdfd7f4eeaaf5f083638f71b1d?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Charlie Chaplin facemask</a>
+          by
+          <a href="https://sketchfab.com/exeterdigitalhumanities?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Exeter Digital Humanities</a>
+          on
+          <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+        </p>
+      </div>
     </div>
 
     <div class="step">
-      <h1>ENDE</h1>
+      <h2>5. Problemlösung</h2>
+      <h3 class="red">5.1 Pre-Processing</h3>
+      <ul>
+        <li>
+          Fotos vor dem Importieren in Photoscan beeinflussen
+          <ul>
+            <li>
+              <div class="red" style="display: inline;">
+                Beim Aufnehmen:
+              </div>
+              Lichtaufbau ändern, HDR Belichtungsreihen, Kameraeinstellungen, verschiedene Kameras und Objektive
+            </li>
+            <li>
+              <div class="red" style="display: inline;">
+                Nachbearbeitung:
+              </div>
+              Werte wie Kontrast, Sättigung, Helligkeit, einzelne Farbkanäle nachträglich verändern
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3 class="red">
+        Ergebnis:
+      </h3>
+      <ul>
+        <li>
+          HDR Aufnahmen resultieren in mehr Details, Belichtung von +2,3EV scheint optimal
+        </li>
+        <li>
+          dadurch auch hoher Kontrast
+        </li>
+      </ul>
+      <h3 class="red">
+        Aber:
+      </h3>
+      <ul>
+        <li>
+          Qualitätsschätzung von Agisoft Photoscan ist eine Blackbox
+        </li>
+        <li>
+          Einstellungen hängen stark von Struktur/Farbe des Objekts ab
+        </li>
+      </ul>
+
     </div>
 
     <div class="step">
-      <h2>Fragen / Diskussion</h2>
+      <h2>5. Problemlösung</h2>
+      <h3 class="red">5.2 Algorithmen bei der Erkennung</h3>
+
+      <div class="row" style="margin-left:125px">
+        <div class="eight columns">
+          <img src="resources/img/lowe.png"/>
+        </div>
+      </div>
+      <div class="row">
+        <h4>Quelle:</h4>
+      </div>
+      <div class="row">
+        <h4>Lowe David G., "Distinctive Image Features from Scale-Invariant Keypoints". In: International Journal of Computer Vision 60(2), 2004, p. 95.</h4>
+      </div>
+
     </div>
 
     <div class="step">
-      <h2>Weiteres Programm</h2>
+      <h2>6. Erkenntnisse</h2>
+      <h3 class="red">Vorbereitung/Nachbearbeitung von Fotos beeinflusst Ergebnis</h3>
+      <ul>
+        <li>
+          Abhängig von Farbe und Strukur des Objekts
+        </li>
+        <li>
+          Hellere Aufnahmen und HDR-Reihen haben mehr Dynamik und damit mehr Details
+        </li>
+      </ul>
+      <h3 class="red">Grundlegendes Problem mit Algorithmus</h3>
+      <ul>
+        <li>
+          Seit Jahren universal verwendeter SWIFT Algorithmus ist nicht für Transparenz ausgelegt
+        </li>
+        <li>
+          Neue Möglichkeit zur Erkennung von Tie Points müsste gefunden und/oder breitflächig implementiert werden
+          <ul>
+            <li class="red">
+              Kosten - Nutzen?
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <h1 style="text-align: center;">ENDE</h1>
+    </div>
+
+    <div class="step">
+      <h2 style="text-align: center;">7. Fragen / Diskussion</h2>
+    </div>
+
+    <div class="step">
+      <h2 class="red" style="text-align: center;">Weiteres Programm</h2>
+      <div align="middle">
+        Aktuell:
+        <span class="datetime red"></span>
+      </div>
+      <br/>
       <div class="ten columns">
         <img src="resources/img/weiteres_programm.png"/>
       </div>
+      <br/>
     </div>
+
     <!-- <div class="step"> <h1 class="red">01</h1> <h2 class="line-height-one-five"> Basics </h2> </div> <div class="step"> <h1>Heading (H1)</h1> <h2>Heading (H2)</h2> <h3>Heading (H3)</h3> <h4>Heading (H4)</h4> <h5>Heading (H5)</h5> <h6>Heading
     (H6)</h6> </div> <div class="step"> <h2>Text</h2> <h3 class="red up-25 after-25">Standard text styles</h3> <p class="justify"> To die or fly to <span class="dotted">dream</span>: ay, <em>that makes calamity of office</em>, and to be: to dread of, and
     the heart-ache<sup>1</sup> and sweat pith their <span class="outline">currents</span> turns, puzzles <code>the pale cast of outrageous</code> for who would bear, <strong>to be or to sleep</strong> of <del>death</del> <ins>life</ins> what pith and

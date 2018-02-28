@@ -64,7 +64,7 @@ var initSlideNo = function (obj) {
 		div.style.paddingLeft = -x;
 		slideNo = slides.indexOf(e.target.id)+1;
 		div.setAttribute('class', 'slide-div-'+slideNo);
-		div.innerHTML = "<p id='slide-text'>"+slideNo+" / "+slides.length+" ("+time+")</p>";
+		div.innerHTML = "<p id='slide-text'>"+slideNo+" / "+slides.length+"</p>";
 	});
 
 	var keyEventHandler = function(oEvent) {
