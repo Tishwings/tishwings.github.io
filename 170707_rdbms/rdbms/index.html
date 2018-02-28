@@ -4,12 +4,12 @@
 <head>
     <title>RDBMS/MYSQL</title>
 
-    <!-- 
+    <!--
 
-    meta information 
+    meta information
 
     -->
-    <meta name="author" content="Torsten Schrade" />
+    <meta name="author" content="Julia Dolhoff Patrick Toschka" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -69,17 +69,17 @@
     </div>
 
     <div id="impress">
-        <!-- 
- 
+        <!--
+
         Topic of the presentation, names of referees, Link to Akademie der Wissenschaft
 
         -->
         <div class="step">
             <h4 style="font-size:30px; color:steelblue">
                 <span id="datetime"></span>
-                <!-- 
+                <!--
 
-                script implements the current date and time with every new load of the presentation 
+                script implements the current date and time with every new load of the presentation
 
                 -->
                 <script>
@@ -98,13 +98,13 @@
 
             <h4 class="down-100">
                 <strong>Slides:</strong>
-                <a href="#" title="View the presentation online">
-                    Link
+                <a href="https://tishwings.github.io/170707_rdbms/rdbms" title="View the presentation online">
+                    https://tishwings.github.io/170707_rdbms/rdbms
                 </a>
             </h4>
 
             <h5>
-                <strong><a href="#">Patrick Toschka, Julia Dolhoff</a></strong> |
+                <strong><a href="#">Julia Dolhoff, Patrick Toschka</a></strong> |
                 <img src="../common/resources/img/Twitter_bird_logo_2012.svg" alt="Twitter" class="twitter-icon" />
                 <a target="_blank" href="https://twitter.com/digicademy" title="Digital Academy on Twitter">@digicademy</a> |
                 <img src="../common/resources/img/Octicons-mark-github.svg" alt="Twitter" class="gh-icon" />
@@ -113,9 +113,9 @@
             </h5>
         </div>
 
-        <!-- 
+        <!--
 
-        ###########   Contents Slide   ########### 
+        ###########   Contents Slide   ###########
 
         -->
 
@@ -144,9 +144,9 @@
             </ol>
         </div>
 
-        <!-- 
-    
-        ###########   Topic 1   ########### 
+        <!--
+
+        ###########   Topic 1   ###########
         What is MySQL and what is RDBMS?
 
         -->
@@ -191,11 +191,11 @@
 
             <h4 class="substep">Beispielabfrage:</h4>
 
-            <!-- 
+            <!--
 
             for our code fragments, wie used the codemirror extension and implemented an editor for every
             new codefragement. The editors are named by "sparql" + id. The id ist ongoing with the number of editor used in the document
-        
+
             Unfortunately, codemirror does not allow as to move the code lines in, so the code looks a bit missplaced.
 
             -->
@@ -241,9 +241,9 @@ WHERE name="Flacius, Matthias"</textarea></form>
             </table>
         </div>
 
-        <!-- 
+        <!--
 
-        ###########   Topic 2   ########### 
+        ###########   Topic 2   ###########
 
         -->
 
@@ -499,9 +499,9 @@ WHERE name="Flacius, Matthias"</textarea></form>
             </ol>
         </div>
 
-        <!-- 
+        <!--
 
-        ###########   Topic 3   ########### 
+        ###########   Topic 3   ###########
 
         -->
 
@@ -541,9 +541,9 @@ WHERE name="Flacius, Matthias"</textarea></form>
             </div>
         </div>
 
-        <!-- 
+        <!--
 
-        ###########   Topic 4   ########### 
+        ###########   Topic 4   ###########
 
         -->
 
@@ -698,7 +698,7 @@ WHERE name="Flacius, Matthias"</textarea></form>
             <h3>Aufgabe 1 - Lösung</h3>
             <form class="substep"><textarea id="sparql3" name="sparql3">
 SELECT title
-FROM `sources` 
+FROM `sources`
 WHERE title LIKE '%Teufel%'</textarea></form>
         </div>
 
@@ -734,13 +734,13 @@ WHERE title LIKE '%Teufel%'</textarea></form>
 
             <form class="substep">
                 <h4>Lösung 1:</h4><textarea id="sparql4" name="sparql4">
-SELECT title 
-FROM `sources` 
+SELECT title
+FROM `sources`
 WHERE date_start BETWEEN '1400-01-01' AND '1600-01-01' </textarea></form>
             <form class="substep">
                 <h4>Lösung 2:</h4><textarea id="sparql5" name="sparql5">
-SELECT title 
-FROM `sources` 
+SELECT title
+FROM `sources`
 WHERE date_start &gt;'1400-01-01' AND date_start &lt; '1600-01-01' </textarea></form>
 
         </div>
@@ -776,8 +776,8 @@ WHERE date_start &gt;'1400-01-01' AND date_start &lt; '1600-01-01' </textarea></
             <h3>Aufgabe 3 - Lösung</h3>
             <form class="substep">
                 <textarea id="sparql6" name="sparql6">
-SELECT COUNT(title) 
-FROM `sources` 
+SELECT COUNT(title)
+FROM `sources`
 WHERE controversy = 'Osiandrischer Streit'</textarea></form>
         </div>
 
@@ -841,9 +841,9 @@ ORDER BY sources.title ASC</textarea></form>
             </div>
         </div>
 
-        <!-- 
+        <!--
 
-        ###########   Topic 5   ########### 
+        ###########   Topic 5   ###########
 
         -->
 
@@ -906,9 +906,9 @@ ORDER BY sources.title ASC</textarea></form>
         </div>
 
 
-        <!-- 
+        <!--
 
-        ###########   Topic 6: Sources and Software   ########### 
+        ###########   Topic 6: Sources and Software   ###########
 
         -->
         <div class="step">
@@ -939,7 +939,7 @@ ORDER BY sources.title ASC</textarea></form>
                     <a target="_blank" href="http://brackets.dnbard.com/extension/brackets-beautify">Beatify Addon für Brackets</a>
                 </li>
                 <li>
-                    <a target="_blank" href="http://www.adobe.com/de/products/photoshop.html">Abode Photoshop CC 2017</a>
+                    <a target="_blank" href="http://www.adobe.com/de/products/photoshop.html">Adobe Photoshop CC 2017</a>
                 </li>
                 <li>
                     <a target="_blank" href="https://github.com/impress/impress.js/">impress.js</a>
@@ -952,12 +952,12 @@ ORDER BY sources.title ASC</textarea></form>
             <h4>Download</h4>
             <ul class="small">
                 <li>
-                    <a href="#">
+                    <a href="https://tishwings.github.io/170707_rdbms/rdbms">
                         Link to presentation
                     </a>
                 </li>
                 <li>
-                    License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>, Patrick Toschka, Julia Dolhoff
+                    License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> by Julia Dolhoff, Patrick Toschka
                 </li>
             </ul>
         </div>
@@ -987,7 +987,7 @@ ORDER BY sources.title ASC</textarea></form>
     <script src="../common/vendor/chartist/chartist.min-0.9.7.js"></script>
     <script src="../common/resources/js/chartist.charts.js"></script>
 
-    <!-- codemirror 
+    <!-- codemirror
 
     Edit:
     As mentioned before, we implemented more than one editor to be able to use multiple fragments of code in one presentation
