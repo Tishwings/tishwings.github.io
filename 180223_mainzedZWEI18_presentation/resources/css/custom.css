@@ -1,0 +1,21 @@
+.sketchfab-embed-wrapper {
+	position: relative;
+}
+
+#slide-div {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 2px;
+	margin-left: 0;
+	margin-top: 0;
+	height: 30px;
+	width: 160px;
+}
+
+#slide-text {
+	bottom: 0px;
+	font-size: 20px;
+	text-align: center;
+	color: #808080;
+}
