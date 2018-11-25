@@ -9,3 +9,5 @@ This repository contains impress.js presentations I have prepared and hold.
 [180223 mainzedZWEI18 Presentation](https://tishwings.github.io/180223_mainzedZWEI18_presentation/)
 
 [181106 Campusradio Wordpress Presentation](https://tishwings.github.io/181106_cr_wordpress/)
+
+[181128 DA Forschungskolloquium](https://tishwings.github.io/181128_thesis_kolloquium/)
